@@ -29,7 +29,6 @@ export function MakeNet(Inputs: number, Layers: number, Neurons: number, Outputs
     OutputArray.push([TempArray])
     return OutputArray
 }
-    //% block
 export function Accuracy(Net: any[], Inputs: number, Neurons: number, Layers: number, Outputs: number, InputOutput: number[][][]) {
     let OutputArray2: number[][][] = []
     let TempArray2: number[] = []
@@ -45,7 +44,6 @@ export function Accuracy(Net: any[], Inputs: number, Neurons: number, Layers: nu
     }
     return _var2 / InputOutput.length
 }
-    //% block
 export function Mutate(Net: number[][][], Inputs: number, Neurons: number, Layers: number, Outputs: number) {
     let OutputArray3: number[][][] = []
     let TempArray3: number[] = []
@@ -81,7 +79,6 @@ export function Mutate(Net: number[][][], Inputs: number, Neurons: number, Layer
     }
     return OutputArray3
 }
-    //% block
 export function Think(Net: number[][][], Inputs: number[], Neurons: number, Layers: number, Outputs: number) {
     let OutputArray4: number[][][] = []
     let TempArray4: number[] = []
