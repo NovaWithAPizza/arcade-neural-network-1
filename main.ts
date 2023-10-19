@@ -21,13 +21,16 @@ namespace AI {
         for (let index3 = 0; index3 < Neurons + 1; index3++) {
             TempArray.push(0)
         }
-        OutputArray.push([TempArray])
         for (let index4 = 0; index4 < Layers - 1; index4++) {
-            for (let index5 = 0; index5 < Neurons - 1; index5++) {
+            OutputArray.push([])
+            for (let index5 = 0; index5 < Neurons; index5++) {
                 OutputArray[OutputArray.length - 1].push(TempArray)
             }
         }
-        OutputArray.push([TempArray])
+        OutputArray.push([])
+        for (let index99 = 0; index99 < Neurons; index99++) {
+            OutputArray[OutputArray.length - 1].push(TempArray)
+        }
         return OutputArray
     }
     //% block
